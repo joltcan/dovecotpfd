@@ -43,9 +43,10 @@
 * @version 1.1 (2011-09-08)
 * @author Charlie Orford (charlie.orford@attackplan.net)
 **/
-
-function password_save($currpass, $newpass)
+class rcube_dovecotpfd_password
 {
+	function save($currpass, $newpass)
+	{
 
 	$rcmail = rcmail::get_instance();
 	$currdir = realpath(dirname(__FILE__));
@@ -93,6 +94,6 @@ function password_save($currpass, $newpass)
 		
 	}
 
+	}
 }
-
 ?>
